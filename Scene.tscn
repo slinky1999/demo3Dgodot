@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.cs" type="Script" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.001, 1, 1 )
+
+[sub_resource type="CapsuleMesh" id=2]
+
+[sub_resource type="BoxShape" id=3]
+
+[sub_resource type="CubeMesh" id=4]
+
+[node name="Main" type="Spatial"]
+
+[node name="Player" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+script = ExtResource( 1 )
+FallAcceleration = 0
+
+[node name="ShapePlayer" type="CollisionShape" parent="Player"]
+transform = Transform( 1.176, 0, 0, 0, 1.796, 0, 0, 0, 1.034, 0.004, -0.014, -2 )
+shape = SubResource( 1 )
+
+[node name="Mesh" type="MeshInstance" parent="Player"]
+transform = Transform( 0.25, 0, 0, 0, -1.09278e-08, -0.25, 0, 0.25, -1.09278e-08, 0, 0, -2 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="Cam" type="Camera" parent="Player"]
+
+[node name="ground" type="Area" parent="."]
+transform = Transform( 2.4, 0, 0, 0, 0.1, 0, 0, 0, 3.64, 0, -1, 0 )
+gravity_point = true
+
+[node name="GroundCollision" type="CollisionShape" parent="ground"]
+transform = Transform( 5.128, 0, 0, 0, 4.692, 0, 0, 0, 4.84, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="MeshGround" type="MeshInstance" parent="."]
+transform = Transform( 2.4, 0, 0, 0, 0.1, 0, 0, 0, 3.64, 0, -1, 0 )
+mesh = SubResource( 4 )
+material/0 = null

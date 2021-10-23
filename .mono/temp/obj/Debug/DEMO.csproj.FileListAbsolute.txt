@@ -1,0 +1,8 @@
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\bin\Debug\DEMO.dll
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\bin\Debug\DEMO.pdb
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\obj\Debug\DEMO.csprojAssemblyReference.cache
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\obj\Debug\DEMO.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\obj\Debug\DEMO.AssemblyInfo.cs
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\obj\Debug\DEMO.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\obj\Debug\DEMO.dll
+C:\Users\gabri\Documents\JeuGodot_Demo\.mono\temp\obj\Debug\DEMO.pdb
